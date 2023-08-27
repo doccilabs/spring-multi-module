@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val coroutineVersion = "1.6.3"
-val mockkVersion = "1.10.3"
-val kotestVersion = "5.3.2"
+val mockkVersion = "1.12.0"
+val kotestVersion = "5.5.5"
 val springCloudVersion = "2021.0.2"
 
 plugins {
@@ -85,7 +85,7 @@ configure(subprojects.filter { it.name !in nonDependencyProjects }) {
     tasks.withType<KotlinCompile> {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "11"
+            jvmTarget = "17"
         }
     }
 

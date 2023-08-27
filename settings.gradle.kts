@@ -1,9 +1,9 @@
 rootProject.name = "spring-multi-module"
 
 pluginManagement {
-    val kotlinVersion = "1.5.10"
-    val springBootVersion = "2.6.6"
-    val dependencyManagementVersion = "1.0.11.RELEASE"
+    val kotlinVersion = "1.8.22"
+    val springBootVersion = "3.1.2"
+    val dependencyManagementVersion = "1.1.2"
     val protobufVersion = "0.8.15" // for gRPC
 
     plugins {
